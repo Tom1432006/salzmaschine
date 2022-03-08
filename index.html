@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+
+	<meta name="theme-color" content="#fcde67"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-title" content="Salzmaschine"/>
+
+	<style type="text/css" media="screen"></style>
+	<link rel="icon" href="icon_32.png" sizes="32x32" />
+	<link rel="icon" href="icon_192.png" sizes="192x192" />
+	<link rel="apple-touch-icon-precomposed" href="icon_180.png" />
+	<meta name="msapplication-TileImage" content="icon_220.png" />
+	
+	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico'>
+
+    <title>Salzmaschine</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="js/maschine.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Salzmaschine</h2>
+    </header>
+    <main>
+        <section class="content">
+            <table>
+                <tr><th class="mobile1"></th><th>Kation</th><th></th><th>Anion</th></tr>
+                <tr class="formel">
+                    <td class="mobile1">Formel</td>
+                    <td><select name="formel_salz" id="formel_salz" onchange="calculate('formel_salz')"></select></td>
+                    <td>-</td>
+                    <td><select name="formel_metall" id="formel_metall" onchange="calculate('formel_metall')"></select></td>
+                </tr>
+                <tr class="name">
+                    <td class="mobile1">Name</td>
+                    <td><select name="name_salz" id="name_salz"  onchange="calculate('name_salz')"></select></td>
+                    <td>-</td>
+                    <td><select name="name_metall" id="name_metall" onchange="calculate('name_metall')"></select></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
